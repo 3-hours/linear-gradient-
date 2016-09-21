@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>linear</title>
+	<style type="text/css">
+		div{margin:20px;float: left;}
+		.grid{
+			width:225px;
+			height: 225px;
+			background-color:#58a;
+			background-image: linear-gradient(white 2px,transparent ),linear-gradient(90deg,white 2px,transparent );
+			background-size: 75px 75px;
+		}
+		.grid2{
+			width:225px;
+			height: 225px;
+			background-color: #58a;
+			background-image: linear-gradient(white 2px, transparent 0),linear-gradient(90deg,white 2px,transparent 0);
+			background-size: 75px 75px;
+		}
+		.grid3{
+			width:225px;
+			height: 225px;
+			background:#58a;
+			background-image: linear-gradient(white 2px, transparent 0),linear-gradient(90deg, white 2px, transparent 0),linear-gradient(hsla(0,0%,100%,0.3) 1px,transparent 0),linear-gradient(90deg,hsla(0,0%,100%,0.3) 1px,transparent 0);
+			background-size: 75px, 75px,15px ,15px;
+		}
+		.grid4{
+			width:225px;
+			height:225px;
+			background-color: #eee;
+			background-image:linear-gradient(45deg,pink 25%,transparent 0),linear-gradient(45deg,transparent 75%,pink 0),
+				linear-gradient(45deg, purple 25%,transparent 0),linear-gradient(45deg,transparent 75%, purple 0);
+			background-size:50px 50px;
+			background-position: 0 0,25px 25px,25px 25px,50px 50px;
+		}
+		.grid5{
+			width:225px;
+			height: 225px;
+			background-color: white;
+			background-image: linear-gradient(45deg,red 25%,transparent 0),linear-gradient(135deg,rgb(200,150,50) 25%, transparent 0),linear-gradient(225deg,yellow 25%,transparent 0),linear-gradient(315deg,orange 25%,transparent 0);
+			background-size: 30px 29px;
+		}
+		.grid6{
+			width: 225px;
+			height: 225px;
+			background-color: white;
+			background-image:linear-gradient(45deg,gray 25%,pink 0,pink 50%,gray 0,gray 75%,pink 0);
+			background-size: 30px 30px;
+		}
+		.grid7{
+			width:225px;
+			height: 225px;
+			background-color:white;
+			background-image: linear-gradient(45deg,transparent 49% ,black 0,black 51% ,transparent 0), 
+							  linear-gradient(135deg,transparent 49% ,black 0,black 51% ,transparent 0); 
+			background-size: 30px 30px;
+		}
+		.grid8{
+			width: 225px;
+            height: 225px;
+            background-color: white;
+            background-blend-mode: multiply;
+   			background:repeating-linear-gradient(
+   												45deg,
+   												transparent,
+   												transparent 1em,
+   												moccasin 0,
+   												moccasin 2em, 
+   												transparent 0,
+   												transparent 3em,
+   												powderblue 0,
+   												powderblue 4em, 
+   												transparent 0,
+   												transparent 5em,
+   												lavender 0,
+   												lavender 6em, 
+   												transparent 0,
+   												transparent 7em,
+   												beige 0,
+   												beige 8em
+   				    							 ),
+   					   repeating-linear-gradient(
+  	    										-45deg,
+  	    										transparent,
+  	    										transparent 1em,
+  	    										khaki 0,
+  	    										khaki 2em,
+  	    										transparent 0,
+  	    										transparent 3em,
+  	    										beige 0,
+  	    										beige 4em,
+  	    										transparent 0,
+  	    										transparent 5em,
+  	    										peachpuff 0,
+  	    										peachpuff 6em
+  	    										)
+
+		}
+		.grid9{
+			width: 225px;
+            height: 225px;
+            background: #58a;
+            background-image:radial-gradient(#fff 5px,transparent 0),radial-gradient(#fff 10px, transparent 0);
+            background-size: 40px;
+            background-position: 0 0, 20px 20px;
+		}
+		.grid10{
+			width: 225px;
+            height:225px;
+            
+            background:
+			radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+                radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+                radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+                radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+                radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+                radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+                radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+                radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+ 			linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+                linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0
+                ;
+			background-color: #300; 
+			background-size: 100px 100px;
+		}
+		.grid11{
+			width: 225px;
+            height:225px;
+			background:
+			radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+			radial-gradient(at 100% 100%,rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),#8a3;
+			background-size: 20px 20px;
+		}
+		.grid12{
+			width: 225px;
+            height:225px;
+			background: 
+			linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
+			linear-gradient(63deg, transparent 74%, #999 78%), 
+			linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), #444;
+			background-size: 16px 48px;
+		}
+		.grid13{
+			width: 225px;
+            height:225px;
+			background: #36c;
+			background: 
+			linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+			linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 0 0,
+			linear-gradient(115deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,
+			linear-gradient(245deg, transparent 75%, rgba(255,255,255,.8) 75%) 7px -15px,#36c;
+			background-size: 15px 30px
+		}
+		.grid14{
+			width: 225px;
+            height:225px;
+			background:
+			linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+			linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+			linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+			background-color:#e1ebbd;
+			background-size: 128px 128px;
+		}
+		.grid15{
+			width: 225px;
+            height:225px;
+			background: 
+			linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+			linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+			linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+			linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+			background-size: 100px 100px;
+			background-color: #EC173A;
+		}
+		.grid16{
+			width: 225px;
+            height:225px;
+            background:
+			linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+			linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+			background-color:#708090;
+			background-size: 64px 128px
+		}
+	</style>
+</head>
+<body>
+		<div class="grid"></div>
+		<div class="grid2"></div>
+		<div class="grid3"></div>
+		<div class="grid4"></div>
+		<div class="grid5"></div>	
+		<div class="grid6"></div>
+		<div class="grid7"></div>
+		<div class="grid8"></div>
+		<div class="grid9"></div>
+		<div class="grid10"></div>
+		<div class="grid11"></div>
+		<div class="grid12"></div>
+		<div class="grid13"></div>
+		<div class="grid14"></div>
+		<div class="grid15"></div>
+		<div class="grid16"></div>
+</body>
+</html>
